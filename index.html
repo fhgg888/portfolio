@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f6f5ef">
+  <meta name="description" content="吴杰，南开大学电子科学与技术硕士。专注视觉语言动作模型、力觉机器人操作与真机部署，探索从感知到行动的完整链路。">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="吴杰 · 让感知，成为行动">
+  <meta property="og:description" content="VLA · 机器人学习 · 力触觉感知。吴杰的研究与工程作品集。">
+  <meta property="og:locale" content="zh_CN">
+  <title>吴杰 Wu Jie — 机器人学习与具身智能</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">跳到主要内容</a>
+  <header class="site-header">
+    <a class="brand" href="#" aria-label="吴杰，返回首页"><span class="brand-mark">W<span>·</span></span><span>吴杰 <small>WU JIE</small></span></a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="打开导航"><span></span><span></span></button>
+    <nav id="site-nav" aria-label="主导航">
+      <a href="#projects">精选项目</a><a href="#demos">真机演示</a><a href="#about">关于我</a><a href="#contact">联系</a>
+      <a class="nav-resume" href="assets/docs/resume.pdf" target="_blank" rel="noopener">查看简历 <span aria-hidden="true">↗</span></a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero wrap" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="status-dot"></span> ROBOTICS & EMBODIED INTELLIGENCE</p>
+        <h1 id="hero-title">让感知，<br>成为<span class="accent">行动。</span></h1>
+        <p class="hero-intro">你好，我是吴杰。<br>探索视觉、语言与动作之间的连接，<br class="desktop-break">让机器人在真实世界里，做得更好。</p>
+        <p class="hero-meta">南开大学硕士在读 <span>/</span> VLA 算法研究 <span>/</span> 软硬件全栈</p>
+        <div class="hero-actions"><a class="button button-dark" href="#projects">探索我的项目 <span aria-hidden="true">↗</span></a><a class="text-link" href="assets/docs/portfolio.pdf" target="_blank" rel="noopener">完整作品集 <span aria-hidden="true">↗</span></a></div>
+        <div class="availability"><span></span> 正在寻找具身智能 / 机器人算法机会</div>
+      </div>
+      <div class="hero-visual">
+        <div class="photo-index"><span>FIELD NOTES — 001</span><span>REAL-WORLD ROBOTICS</span></div>
+        <div class="hero-photo"><img src="assets/images/force-rig.webp" alt="实习项目中的双臂机器人与 Gello 遥操作装置" width="1600" height="1200" fetchpriority="high"><span class="image-corner corner-a"></span><span class="image-corner corner-b"></span><button class="hero-play" type="button" data-video="force-wiping" aria-label="播放力觉机器人实机演示"><span aria-hidden="true">▶</span></button></div>
+        <div class="visual-caption"><span>01 / 双臂力觉操作平台</span><span>Perception → Action</span></div>
+        <div class="floating-note"><span class="note-symbol" aria-hidden="true">↗</span><div>Ideas into motion.<small>在真实世界中验证想法</small></div></div>
+      </div>
+    </section>
+
+    <div class="focus-strip wrap" aria-label="研究与工程方向">
+      <div><span class="focus-index">01</span><p>视觉 · 语言 · 动作<small>Vision–Language–Action</small></p></div>
+      <div><span class="focus-index">02</span><p>力觉闭环与机器人学习<small>Force-aware Robot Learning</small></p></div>
+      <div><span class="focus-index">03</span><p>从电路到真机部署<small>Hardware to Real-world Systems</small></p></div>
+    </div>
+
+    <section class="section wrap" id="projects" aria-labelledby="projects-title">
+      <div class="section-heading"><div><p class="eyebrow">01 / SELECTED WORK</p><h2 id="projects-title">研究与实践<span class="title-dot">.</span></h2></div><p class="section-description">关注真实问题，也关注最后一厘米。<br>从模型设计到真机实验的完整探索。</p></div>
+      <div class="filter-bar" aria-label="筛选项目"><div class="filters"><button type="button" data-filter="all" aria-pressed="true">全部项目 <small>06</small></button><button type="button" data-filter="vla" aria-pressed="false">VLA & 机器人</button><button type="button" data-filter="sensing" aria-pressed="false">力触觉 & 感知</button><button type="button" data-filter="hardware" aria-pressed="false">硬件系统</button></div><span class="filter-caption" id="project-count" aria-live="polite">6 个项目</span></div>
+      <div class="project-grid">
+        <article class="project-card project-featured" data-category="vla">
+          <button type="button" class="project-image rsa-cover" data-project="rsa" aria-label="查看 RSA 项目详情"><span class="image-tag">FEATURED RESEARCH</span><img src="assets/images/rsa-method.webp" alt="RSA 异步 VLA 推理与轻量纠偏器的工作流程" loading="lazy" width="1210" height="916"><span class="open-icon" aria-hidden="true">↗</span></button>
+          <div class="project-body"><div class="project-topline"><span>01 — VLA / REAL-TIME INFERENCE</span><span class="paper-status">ICRA 2027 在投 · 第一作者</span></div><h3>RSA：让动作跟上此刻</h3><p>在异步 VLA 返回“过时动作”时，用最新观测与轻量 DiT 纠偏器重新对齐动作，连接大模型推理与实时控制。</p><div class="project-metrics"><div><strong>~5<span> ms</span></strong><small>RTX 4090 · 五步纠偏</small></div><div><strong>19<span>/20</span></strong><small>双臂移动目标任务成功次数</small></div></div><div class="project-bottom"><div class="tags"><span>DiT</span><span>Async Inference</span><span>VLA</span></div><button class="text-link" data-project="rsa" type="button">探索项目 <span aria-hidden="true">↗</span></button></div></div>
+        </article>
+        <article class="project-card" data-category="vla sensing"><button type="button" class="project-image" data-project="force" aria-label="查看 ForceVLA 项目详情"><img src="assets/images/force-rig.webp" alt="ForceVLA 双臂机器人平台" loading="lazy" width="1600" height="1200"><span class="image-tag">ROBOT LEARNING</span><span class="open-icon" aria-hidden="true">↗</span></button><div class="project-body"><div class="project-topline"><span>02 — FORCE-AWARE MANIPULATION</span></div><h3>ForceVLA：让机器人感知接触</h3><p>让 π0.5 联合预测动作与未来接触力，通过导纳控制完成擦黑板、削黄瓜等接触密集型任务。</p><div class="project-bottom"><div class="tags"><span>Flow Matching</span><span>力觉闭环</span></div><button class="text-link" data-project="force" type="button">探索项目 <span aria-hidden="true">↗</span></button></div></div></article>
+        <article class="project-card" data-category="vla"><button type="button" class="project-image" data-project="pi" aria-label="查看 π0.5 全栈复现项目详情"><img src="assets/images/deployment.webp" alt="π0.5 真机部署的 Web 控制台与机器人多视角" loading="lazy" width="1600" height="867"><span class="image-tag">END-TO-END ENGINEERING</span><span class="open-icon" aria-hidden="true">↗</span></button><div class="project-body"><div class="project-topline"><span>03 — POLICY TO REAL WORLD</span></div><h3>π0.5：从数据到真机</h3><p>贯通数据重采样、实时控制与真机强化学习，探索 Subtask 多阶段任务与 NativeMEM 长程记忆。</p><div class="project-bottom"><div class="tags"><span>RLT / RTC</span><span>Memory</span></div><button class="text-link" data-project="pi" type="button">探索项目 <span aria-hidden="true">↗</span></button></div></div></article>
+        <article class="project-card" data-category="sensing hardware"><button type="button" class="project-image" data-project="grasp" aria-label="查看 GRASP 电子皮肤项目详情"><img src="assets/images/tactile-system.webp" alt="GRASP 柔性电子皮肤阵列与 FPGA 采集电路" loading="lazy" width="1269" height="951"><span class="image-tag">TACTILE INTELLIGENCE</span><span class="open-icon" aria-hidden="true">↗</span></button><div class="project-body"><div class="project-topline"><span>04 — MULTIDIMENSIONAL SENSING</span></div><h3>GRASP：读懂触觉的更多维度</h3><p>从 FPGA 采集到手写运动学解耦，将柔性电子皮肤的信号转化为压力、方向、速度等五维特征。</p><div class="paper-note">Nature Sensors 在投 · 第一作者（共同贡献）</div><div class="project-bottom"><div class="tags"><span>2,000 Hz</span><span>FPGA / FDM</span></div><button class="text-link" data-project="grasp" type="button">探索项目 <span aria-hidden="true">↗</span></button></div></div></article>
+        <article class="project-card" data-category="hardware"><button type="button" class="project-image board-cover" data-project="adc" aria-label="查看 32 通道采集硬件详情"><img src="assets/images/tactile-board.webp" alt="自主设计的 32 通道 AD7606 采集板" loading="lazy" width="1158" height="708"><span class="image-tag">BUILT FROM SCRATCH</span><span class="open-icon" aria-hidden="true">↗</span></button><div class="project-body"><div class="project-topline"><span>05 — EMBEDDED SYSTEMS</span></div><h3>32 通道采集：把感知做成硬件</h3><p>从电子皮肤系统延伸到独立采集板，完成 PCB 设计及 STM32、FPGA 双端驱动。</p><div class="project-bottom"><div class="tags"><span>AD7606</span><span>PCB / STM32</span></div><button class="text-link" data-project="adc" type="button">探索项目 <span aria-hidden="true">↗</span></button></div></div></article>
+        <article class="project-card project-wide" data-category="sensing hardware"><button type="button" class="project-image" data-project="taste" aria-label="查看人工重构味觉神经通路项目详情"><img src="assets/images/gustatory.webp" alt="人工味觉感知与采集系统的实验装置" loading="lazy" width="763" height="572"><span class="open-icon" aria-hidden="true">↗</span></button><div class="project-body"><div class="project-topline"><span>06 — BIO-INSPIRED PERCEPTION</span><span class="paper-status">Nature 在投 · 共同作者</span></div><h3>人工重构味觉神经通路</h3><p>连接传感器采集、边缘识别与脑电解码，探索从电子感知到神经通路的闭环。我负责采集电路、边缘识别与脑电算法。</p><div class="project-bottom"><div class="tags"><span>边缘计算</span><span>生物电子</span></div><button class="text-link" data-project="taste" type="button">探索项目 <span aria-hidden="true">↗</span></button></div></div></article>
+      </div>
+      <p class="source-note">项目结果来自个人简历与研究材料；论文状态截至 2026 年 9 月，均为在投。</p>
+    </section>
+
+    <section class="demo-section" id="demos" aria-labelledby="demos-title"><div class="wrap">
+      <div class="section-heading"><div><p class="eyebrow">02 / IN THE REAL WORLD</p><h2 id="demos-title">让实验，动起来<span class="title-dot">.</span></h2></div><p class="section-description">真实平台，真实任务。<br>一些来自实验室的片段。</p></div>
+      <div class="demo-grid" id="demo-grid"></div><button type="button" class="button button-outline-light" id="more-demos" aria-expanded="false" aria-controls="demo-grid">展开全部演示 <span aria-hidden="true">＋</span></button>
+      <noscript><p>请开启 JavaScript 查看视频画廊。你也可以<a href="assets/docs/portfolio.pdf">阅读完整作品集</a>。</p></noscript>
+    </div></section>
+
+    <section class="section wrap about-section" id="about" aria-labelledby="about-title"><div class="section-heading"><div><p class="eyebrow">03 / THE PERSON BEHIND THE WORK</p><h2 id="about-title">好奇，动手，走到最后<span class="title-dot">.</span></h2></div></div>
+      <div class="about-grid"><div class="about-copy"><div class="person"><img src="assets/images/portrait.webp" alt="吴杰的照片" width="92" height="112" loading="lazy"><div><h3>吴杰 <span>Wu Jie</span></h3><p>研究算法，也喜欢亲手造东西。</p></div></div><p>我是南开大学电子科学与技术专业硕士，研究触觉传感器电路与系统，并在实习中深入视觉语言动作模型与机器人学习。</p><p>从画一块 PCB、搭建采集链路，到训练策略、让机器人完成一次真实操作，我享受把每一环连接起来的过程。工作之外，也会做仿生机器人、机械键盘和一些有趣的小装置。</p><div class="skill-groups"><div><span>机器人学习</span><p>VLA · Flow Matching · DiT · 强化学习 · 长程记忆</p></div><div><span>系统与硬件</span><p>真机部署 · 力控 · FPGA / Zynq · STM32 · PCB · 3D 建模</p></div></div><a class="text-link" href="https://github.com/fhgg888" target="_blank" rel="noopener">我的 GitHub <span aria-hidden="true">↗</span></a></div>
+      <div class="timeline"><div class="timeline-item"><span class="timeline-dot"></span><p class="timeline-date">2026.03 — 2026.09</p><h3>北京小雨智造科技有限公司</h3><p class="timeline-role">VLA 算法研究员 · 实习</p><p>RSA 延迟纠偏、力觉 VLA、π0.5 全栈复现与真机强化学习。</p></div><div class="timeline-item"><span class="timeline-dot"></span><p class="timeline-date">2024.09 — 至今</p><h3>南开大学</h3><p class="timeline-role">电子科学与技术 · 硕士 · 推免</p><p>电子信息与光学工程学院<br>导师：徐文涛教授 · GPA 3.56 / 4</p></div><div class="timeline-item"><span class="timeline-dot"></span><p class="timeline-date">2020.09 — 2024.07</p><h3>山西大学</h3><p class="timeline-role">电子信息科学与技术 · 本科</p><p>专业排名 1 / 60 · GPA 3.73 / 4.5<br>曾任电子爱好者协会会长</p></div></div>
+      </div>
+      <div class="maker-strip"><img src="assets/images/keyboard.webp" alt="自己设计与装配的开源机械键盘" loading="lazy" width="1600" height="1200"><div><p class="eyebrow">ALWAYS A MAKER</p><h3>有些想法，值得亲手做出来。</h3><p>开源键盘、仿生蝴蝶、桌面机器人……<br>保持好奇，也保持动手的习惯。</p><button class="text-link" type="button" data-video="butterfly">看一个小作品 <span aria-hidden="true">↗</span></button></div><span class="maker-drawing" aria-hidden="true">+</span></div>
+    </section>
+
+    <section class="contact-section wrap" id="contact" aria-labelledby="contact-title"><div><p class="eyebrow"><span class="status-dot"></span> OPEN TO OPPORTUNITIES</p><h2 id="contact-title">一起，让下一个想法落地。</h2><p>欢迎交流 VLA、机器人学习、力触觉感知，以及有趣的工程问题。</p></div><div class="contact-actions"><a class="contact-email" href="mailto:JayWufhgg888@163.com">JayWufhgg888@163.com <span aria-hidden="true">↗</span></a><button id="copy-email" class="text-link" type="button">复制邮箱 <span aria-hidden="true">＋</span></button></div></section>
+  </main>
+  <footer class="site-footer wrap"><a class="brand" href="#"><span class="brand-mark">W<span>·</span></span><span>吴杰 <small>WU JIE</small></span></a><p>© <span id="year">2026</span> 吴杰 · 保持好奇，持续构建。</p><a class="text-link" href="assets/docs/resume.pdf" target="_blank" rel="noopener">简历 PDF <span aria-hidden="true">↗</span></a></footer>
+  <dialog id="detail-dialog" aria-labelledby="dialog-title"><button type="button" class="dialog-close" aria-label="关闭详情">×</button><div id="dialog-content"></div></dialog>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
