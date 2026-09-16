@@ -37,6 +37,12 @@ git push -u origin main
 
 ## 修改内容
 
+独立项目页：
+
+- `forcevla/index.html`：简历项目二，ForceVLA 力觉融合、联合预测、导纳控制与两段真机演示；在线路径 `/portfolio/forcevla/`。
+- `pi05/index.html`：简历项目三，π0.5 数据与部署、强化学习结果、Subtask、NativeMEM 与七段演示；在线路径 `/portfolio/pi05/`。
+- 两页共用 `project-pages.css` 和 `project-pages.js`，通过 `../assets/` 引用已有媒体。首页项目图片和文字入口直接跳转至独立页面；每页可返回首页或访问另一个项目。
+
 | 文件 | 用途 |
 | --- | --- |
 | `index.html` | 首页、项目卡片、教育与实习经历、邮箱及 GitHub 链接 |
