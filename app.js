@@ -6,6 +6,7 @@ const videoPath = 'assets/videos/';
 const email = 'JayWufhgg888@163.com';
 
 const demos = [
+  { id: 'exoskeleton-retarget', title: '外骨骼遥操作 · Retarget 数采', subtitle: '动作重定向 · 示教数据采集', type: 'TELEOPERATION / DATA COLLECTION', poster: 'exoskeleton-retarget-poster.webp' },
   { id: 'force-wiping', title: '力控擦黑板', subtitle: 'ForceVLA · 接触力与柔顺跟随', type: 'FORCE CONTROL', poster: 'force-wiping-poster.webp' },
   { id: 'rtc-boxes', title: 'Training RTC 叠盒子', subtitle: 'π0.5 · 实时执行与阶段结构', type: 'REAL-TIME POLICY', poster: 'rtc-boxes-poster.webp' },
   { id: 'rlt-unplugging', title: '在线强化学习拔网线', subtitle: 'RLT · 从真机交互中改进策略', type: 'REINFORCEMENT LEARNING', poster: 'rlt-unplugging-poster.webp' },
@@ -82,6 +83,7 @@ const projects = {
       { title: '我的工作', text: '负责 FPGA / Zynq 与 STM32 开发、PCB 设计、3D 建模、手写运动学解耦算法及深度学习模型。项目覆盖从原始信号到最终识别结果的完整链路。' },
     ], metrics: [['2,000 Hz', '系统采样率'], ['5 维', '手写动态特征'], ['全栈', '采集电路 → 信号 → 识别']],
     videos: ['tactile-capture', 'handwriting', 'tactile-grasp'],
+    submission: { file: 'nature-sensors-submission.jpg', title: 'Nature Sensors 投稿确认邮件' },
     source: '简历第 2 页；作品集第 18–23 页；GRASP 论文稿件。仅展示各材料一致的指标。',
   },
   adc: {
@@ -102,7 +104,9 @@ const projects = {
     sections: [
       { title: '前端感知与边缘识别', text: '设计味觉传感器采集电路，对酸、甜、苦、咸、鲜五种基础味觉进行分类，并把识别模型部署到边缘设备。' },
       { title: '神经通路闭环与脑电解码', text: '项目将识别结果转化为特定频率的电刺激，连接神经突触电路与定制电极。我负责基于注意力机制的脑电识别模型，用于分析真实味觉刺激与电刺激诱发的脑电响应。' },
-    ], source: '简历第 2 页；作品集第 24 页。作者身份采用简历中的共同作者表述。',
+    ],
+    submission: { file: 'nature-submission.jpg', title: 'Nature 投稿确认邮件' },
+    source: '简历第 2 页；作品集第 24 页。作者身份采用简历中的共同作者表述。',
   },
 };
 
@@ -149,6 +153,7 @@ function openProject(id, trigger) {
       ${project.metrics ? `<div class="result-list">${project.metrics.map(([value, label]) => `<div><strong>${escapeHtml(value)}</strong><span>${escapeHtml(label)}</span></div>`).join('')}</div>` : ''}
       ${project.videos ? `<section class="detail-section"><h3>真机演示</h3><div class="detail-videos">${project.videos.map(videoId => `<button type="button" data-video="${videoId}" data-parent-project="${id}"><span aria-hidden="true">▶</span>${escapeHtml(demos.find(demo => demo.id === videoId).title)}</button>`).join('')}</div></section>` : ''}
       ${project.link ? `<a class="text-link detail-external" href="${project.link.href}" target="_blank" rel="noopener">${escapeHtml(project.link.text)} <span aria-hidden="true">↗</span></a>` : ''}
+      ${project.submission ? `<section class="detail-section submission-proof"><h3>${escapeHtml(project.submission.title)}</h3><p>期刊系统的投稿及作者通知，不代表录用或发表。</p><a href="assets/docs/${project.submission.file}" target="_blank" rel="noopener"><img src="assets/docs/${project.submission.file}" alt="${escapeHtml(project.submission.title)}截图" loading="lazy"><span class="text-link">查看完整截图 ↗</span></a></section>` : ''}
       <p class="detail-source">来源：${escapeHtml(project.source)}</p>
     </div>`;
   displayDialog();
