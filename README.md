@@ -61,3 +61,9 @@ git push -u origin main
 ## 2026-09-20 素材更新
 
 新增外骨骼 retarget 遥操作数采视频，位于首页演示区与项目三 `pi05/#data-collection`。首页共 22 段视频。新增两份期刊投稿确认邮件截图，位于对应项目卡片及详情；仅作为投稿记录，不代表录用或发表。原始截图保存在 `assets/docs/nature-sensors-submission.jpg` 和 `assets/docs/nature-submission.jpg`。
+
+## 研究介绍页（2026-09-21）
+
+- `nature-sensors/index.html`：五维电子皮肤与 GRASP，按简历介绍个人贡献和成果，另列稿件版本指标差异。
+- `nature/index.html`：人工重构味觉神经通路，按简历说明电路、边缘识别与脑电算法贡献。
+- 图像位于 `assets/images/research/`，由提供的研究图压缩得到；原始文件未改动。两页包含对应投稿通知。
